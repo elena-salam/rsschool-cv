@@ -19,4 +19,18 @@ Some time ago I decided to get new skills and began to study web-development. No
 * VS Code
 * Figma
 
+### Code Example:
+```function sum(a, b) {
+  return a + b;
+}
 
+let result = sum(1, 2);
+alert( result );
+```
+
+### Education:
+* Kharkiv State Academy of Railway Transport, engineer
+* Kyiv Institute of Translators and Interpreters, translator
+
+### English:
+level **Upper Intermediate** (it is not a constant value but depend on usage frequency)
