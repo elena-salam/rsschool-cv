@@ -1,0 +1,131 @@
+*, 
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: brown;
+  font-weight: 400;
+}
+:root{
+  --primary-color:#F1CDB3;
+}
+.main-header{
+  width: 1280px;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.logo-title{
+  display: block;
+  text-decoration: none;
+  font-family: 'Georgia';
+  font-size: 32px;
+  line-height: 110%;
+  /* or 35px */
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-color);
+}
+
+.logo-subtitle{
+  font-family: 'Arial', sans-serif;
+  line-height: 15px;
+  font-size: 13px;
+  /* identical to box height */
+  align-items: center;
+  display: flex;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.main-nav{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 223px;
+}
+.nav-menu{
+  list-style: none;
+  display: flex;
+}
+.menu-item{
+  margin-right: 35px;
+}
+.menu-item:last-child{
+  margin-right: 0;
+}
+
+
+.menu-item-link,
+.main-font{
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 160%;
+  /* identical to box height, or 24px */
+  color: #CDCDCD;
+}
+
+.menu-item-link{
+  display: block;
+  text-decoration: none;
+  margin: 10px 0px;
+}
+.active-link{
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.menu-item-link:hover,
+.menu-item-link:focus,
+.active-link{
+  color: #FAFAFA;
+}
+
+/* //// NOT ONLY ///// */
+.not-only-box{
+  width: 38.5%;
+}
+
+.not-only-title{
+  margin: 0;
+  margin-bottom: 42px;
+  width: 68%;
+  font-family: 'Georgia', serif;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 130%;
+  /* or 57px */
+  color: #FFFFFF;
+}
+
+.main-font{
+  margin: 0;
+  margin-bottom: 42px;
+
+}
+
+.make-a-friend{
+  display: block;
+  padding: 15px 45px;
+  width: 207px;
+  height: 52px;
+  /* left: calc(50% - 207px/2 - 126.5px); */
+  text-decoration: none;
+  background: var(--primary-color);
+  border-radius: 100px;
+
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 130%;
+  /* identical to box height, or 22px */
+  letter-spacing: 0.059em;
+  color: #292929;
+
+}
