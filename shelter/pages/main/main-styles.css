@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'GeorgiaFace';
+  src: url('../../fonts/georgia-regular.woff2') format('woff2'),
+       url('../../fonts/georgia-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArialFace';
+  src: url('../../assets/fonts/arial-regular.woff2') format('woff2'),
+       url('../../assets/fonts/arial-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 *, 
 *::after,
 *::before{
@@ -16,18 +34,35 @@ body{
 :root{
   --primary-color:#F1CDB3;
 }
-.main-header{
-  width: 1280px;
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
+.main-header{
+  width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
 .container{
   width: 1200px;
   margin: 0 auto;
 }
+.main-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  
+}
+
 .logo-title{
   display: block;
+  margin-bottom: 10px;
   text-decoration: none;
-  font-family: 'Georgia';
+  font-family: 'GeorgiaFace';
   font-size: 32px;
   line-height: 110%;
   /* or 35px */
@@ -37,6 +72,7 @@ body{
 }
 
 .logo-subtitle{
+  margin: 0;
   font-family: 'Arial', sans-serif;
   line-height: 15px;
   font-size: 13px;
@@ -47,14 +83,13 @@ body{
   color: #FFFFFF;
 }
 
-.main-nav{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 223px;
-}
+
 .nav-menu{
-  list-style: none;
   display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .menu-item{
   margin-right: 35px;
@@ -69,14 +104,13 @@ body{
   font-family: 'Arial', sans-serif;
   font-size: 15px;
   line-height: 160%;
-  /* identical to box height, or 24px */
   color: #CDCDCD;
 }
 
 .menu-item-link{
   display: block;
   text-decoration: none;
-  margin: 10px 0px;
+  /* margin: 10px 0px; */
 }
 .active-link{
   border-bottom: 3px solid var(--primary-color);
@@ -89,8 +123,14 @@ body{
 }
 
 /* //// NOT ONLY ///// */
+.not-only-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
 .not-only-box{
-  width: 38.5%;
+  /* width: 38.5%; */
+  padding-top: 163px;
+  width: 460px;
 }
 
 .not-only-title{
@@ -127,5 +167,13 @@ body{
   /* identical to box height, or 22px */
   letter-spacing: 0.059em;
   color: #292929;
+
+}
+
+.header-bg{
+  /* height: 908px; */
+  background: url(noise_lines_transparent@2X.png), 
+  radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) , #211F20;
+  /* background: no-repeat cover; */
 
 }
