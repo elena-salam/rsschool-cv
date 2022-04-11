@@ -42,7 +42,7 @@ img{
 }
 
 .main-header{
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 60px;
 }
@@ -124,9 +124,10 @@ img{
 /* //// NOT ONLY ///// */
 .header-bg{
   height: 908px;
-  background: url(noise_lines_transparent@2X.png), 
+  /* background: url(../../assets/images/start-screen-background.jpg); */
+  background: url(../../assets/images/noise_transparent@2x.png), 
   radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) , #211F20;
-  background: no-repeat cover;
+  background: no-repeat cover center;
 }
 
 .not-only-wrapper{
@@ -160,7 +161,6 @@ img{
 .btn{
   display: block;
   padding: 15px 45px;
-  width: 207px;
   height: 52px;
   text-decoration: none;
   border-radius: 100px;
@@ -173,6 +173,7 @@ img{
 }
 
 .make-a-friend-btn{
+  width: 207px;
   background: var(--primary-color);
 }
 .make-a-friend-btn:hover{
@@ -225,27 +226,80 @@ img{
   margin-bottom: 60px;
 }
 
-.our-friends_list{
+.our-friends_wrapper{
   display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.our-friends_list{
+  position: relative;
+  display: flex;
+  padding: 0;
   margin: 0;
+  width: 1026px;
   margin-bottom: 60px;
-  padding: 0 145px;
+  /* padding: 0 145px; */
   justify-content: space-between;
   list-style: none;
 }
+
+.arrow-btn{
+  margin-top: 192px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;  
+}
+
+.arrow-btn_left{
+  margin-right: 53px;
+  background: url(../../assets/icons/Arrow.png) no-repeat center;
+}
+
+.arrow-right{
+  margin-left: 53px;
+  background: url(../../assets/icons/Arrow.png) no-repeat center;
+  transform: rotateY(180deg);
+
+}
+
 .our-friends_list-item{
   /* margin: 0 auto; */
   padding: 0;
+  padding-bottom: 30px;
+  background: #FAFAFA;
+  border-radius: 9px;
+}
+.our-friends_list-item:hover{
+  background: #FFFFFF;
 }
 .pet-name{
   margin: 30px auto;
   text-align: center;
+  font-family: 'Georgia';
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+
+/* color-dark-l */
+
+color: #545454;
 }
 .learn-more-btn,
 .button{
   margin: 0 auto;
+  width: 187px;
+  padding: 13px 43px;
+  line-height: 22px;
   text-decoration: none;
   border: 2px solid #F1CDB3;
+  letter-spacing: 0.05em;
+}
+.our-friends_list-item:hover .learn-more-btn{
+  background: #FDDCC4;
+  border-radius: 100px;
+  /* border: 2px solid #FDDCC4; */
+  border:2px solid transparent;
 }
 .get-to-know_btn{
   margin: 0 auto;
@@ -255,3 +309,4 @@ img{
   background-color: var(--primary-color);
   letter-spacing: 0.058em;
 }
+

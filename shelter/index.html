@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shelter</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="main-styles.css">
+  <!-- <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="main-styles.css"> -->
+  <link rel="stylesheet" href="pages/main/normalize.css">
+  <link rel="stylesheet" href="pages/main/main-styles.css">
 </head>
 <body>
   <div class="header-bg">
@@ -41,13 +43,13 @@
           <p class="main-font">We offer to give a chance to a little and nice puppy with an extremely wide and open heart.   He or she will love you more than anybody else in the world, you will see!</p>
           <a href="#ourFriends" class="make-a-friend-btn btn">Make a friend</a>
         </div>
-        <div class="pet-img"><img src="../../assets/images/start-screen-puppy.png" alt="dog" width="698" height="728"></div>
+        <div class="pet-img"><img src="assets/images/start-screen-puppy.png" alt="dog" width="698" height="728"></div>
       </div>
     </section>
   </div>
   <section class="about-shelter">
     <div class="about-shelter-wrapper">
-      <img src="../../assets/images/about-pets.png" alt="dog and cat" width="300" height="408">
+      <img src="assets/images/about-pets.png" alt="dog and cat" width="300" height="408">
       <div class="description-box">
         <h3 class="about-shelter_heading section-heading">About the shelter <br>“Cozy House”</h3>
         <p class="about-shelter_text">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
@@ -57,23 +59,27 @@
   </section>
   <section class="our-friends">
     <h3 class="our-friendds_heading section-heading">Our friends who<br> are looking for a house</h3>
-    <ul class="our-friends_list">
-      <li class="our-friends_list-item">
-        <img src="../../assets/images/pets-katrine.png" alt="pets-katrine" width="270" height="270">
-        <p class="pet-name">Katrine</p>
-        <a class="learn-more-btn btn" href="">Learn more</a>
-      </li>
-      <li class="our-friends_list-item">
-        <img src="../../assets/images/pets-jennifer.png" alt="pets-jennifer" width="270" height="270">
-        <p class="pet-name">Jennifer</p>
-        <a class="learn-more-btn btn" href="">Learn more</a>
-      </li>
-      <li class="our-friends_list-item">
-        <img src="../../assets/images/pets-woody.png" alt="pets-woody" width="270" height="270">
-        <p class="pet-name">Woody</p>
-        <a class="learn-more-btn btn" href="">Learn more</a>
-      </li>
-    </ul>
+    <div class="our-friends_wrapper">
+      <button class="arrow-btn arrow-btn_left"></button>
+      <ul class="our-friends_list">
+        <li class="our-friends_list-item">
+          <img src="assets/images/pets-katrine.png" alt="pets-katrine" width="270" height="270">
+          <p class="pet-name">Katrine</p>
+          <a class="learn-more-btn btn" href="">Learn more</a>
+        </li>
+        <li class="our-friends_list-item">
+          <img src="assets/images/pets-jennifer.png" alt="pets-jennifer" width="270" height="270">
+          <p class="pet-name">Jennifer</p>
+          <a class="learn-more-btn btn" href="">Learn more</a>
+        </li>
+        <li class="our-friends_list-item">
+          <img src="assets/images/pets-woody.png" alt="pets-woody" width="270" height="270">
+          <p class="pet-name">Woody</p>
+          <a class="learn-more-btn btn" href="">Learn more</a>
+        </li>
+      </ul>
+      <button class="arrow-btn arrow-right"></button>
+    </div>
     <a class="get-to-know_btn btn" href="">Get to know the rest</a>
   </section>
   
